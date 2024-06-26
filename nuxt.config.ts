@@ -3,5 +3,5 @@ export default defineNuxtConfig({
     '/': { prerender: true }
   },
 
-  modules: ["@nuxt/content", "@nuxthq/studio"]
+  modules: ["@nuxt/content", "@nuxthq/studio", "@nuxt/image"]
 })
