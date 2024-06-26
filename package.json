@@ -9,7 +9,6 @@
     "prepare": "nuxt prepare"
   },
   "devDependencies": {
-    "content-wind": "latest",
     "nuxt": "latest"
   }
 }
