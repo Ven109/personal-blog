@@ -1,4 +1,6 @@
 <template>
-    <ContentDoc
-        tag="article" />
+    <LazyClientOnly>
+        <ContentDoc
+            tag="article" />
+    </LazyClientOnly>
 </template>
