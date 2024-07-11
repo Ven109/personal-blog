@@ -1,23 +1,29 @@
 <template>
     <header>
-        <address class="mb-6 flex items-center not-italic">
-            <div class="mr-3 inline-flex items-center text-sm text-gray-900 dark:text-white">
+        <address class="flex items-center mb-6 not-italic">
+            <div class="inline-flex items-center mr-3 text-gray-900 dark:text-white text-sm">
                 <img
-                    class="mr-4 h-16 w-16 rounded-full" :src="img">
+                    class="h-16 mr-4 rounded-full w-16"
+                    :src="img"
+                >
                 <div>
-                    <a href="#" rel="author" class="text-xl font-bold text-gray-900 dark:text-white">
+                    <a
+                        href="#"
+                        rel="author"
+                        class="font-bold text-gray-900 dark:text-white text-xl"
+                    >
                         {{ name }}
                     </a>
-                    <p class="text-base text-gray-500 dark:text-gray-400">
+                    <p class="text-base dark:text-gray-400 text-gray-500">
                         {{role}}
                     </p>
-                    <p class="text-base text-gray-500 dark:text-gray-400">
+                    <p class="text-base dark:text-gray-400 text-gray-500">
                         {{ date }}
                     </p>
                 </div>
             </div>
         </address>
-        <h1 class="text-3xl font-extrabold leading-tight text-gray-900 lg:text-4xl dark:text-white">
+        <h1 class="font-extrabold leading-tight text-3xl dark:text-white lg:text-4xl text-gray-900">
             {{ title }}
         </h1>
     </header>

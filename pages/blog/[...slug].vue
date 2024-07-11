@@ -1,4 +1,5 @@
 <template>
     <ContentDoc
-        tag="article" />
+        tag="article"
+    />
 </template>

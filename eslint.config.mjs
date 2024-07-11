@@ -1,8 +1,39 @@
 import withNuxt from "./.nuxt/eslint.config.mjs";
+import kalimahAppsTailwind from '@kalimahapps/eslint-plugin-tailwind';
 
 export default withNuxt({
+  plugins: {
+    kalimahAppsTailwind,
+  },
   files: ["**/*.ts", "**/*.vue"],
   rules: {
+    "vue/max-attributes-per-line": ["error", {
+      "singleline": {
+        "max": 1
+      },      
+      "multiline": {
+        "max": 1
+      }
+    }],
+    "vue/html-closing-bracket-newline": [
+      "error",
+      {
+        "singleline": "never",
+        "multiline": "always",
+        "selfClosingTag": {
+          "singleline": "never",
+          "multiline": "always"
+        }
+      }
+    ],
+    "vue/singleline-html-element-content-newline": ["error", {
+      "ignoreWhenNoAttributes": false,
+      "ignoreWhenEmpty": false,
+    }],
+    'kalimahAppsTailwind/sort': 'warn',
+		'kalimahAppsTailwind/multiline': ['warn', {
+      maxLen: 200,
+    }],
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/no-this-alias": [
@@ -53,13 +84,6 @@ export default withNuxt({
     "no-var": [1],
     "one-var": [2, "never"],
     "semi": "off",
-    "vue/html-closing-bracket-newline": [
-      "error",
-      {
-        singleline: "never",
-        multiline: "never",
-      },
-    ],
     "vue/enforce-style-attribute": ["error", { allow: ["scoped"] }],
     "vue/html-indent": ["error", 4],
     "vue/max-lines-per-block": [
