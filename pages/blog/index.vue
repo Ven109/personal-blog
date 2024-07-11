@@ -1,12 +1,15 @@
 <template>
     <div class="grid grid-cols-3 gap-4 auto-rows-max auto-cols-max">
-        <ClientOnly>
-            <ContentList v-slot="{ list }" :query="query">
+        <ContentList :query="query">
+            <template #default="{ list }">
                 <div v-for="blog in list" :key="blog._path">
                     <BlogCard :path="blog._path || ''" :title="blog.title || ''" :description="blog.description" />
                 </div>
-            </ContentList>
-        </ClientOnly>
+            </template>
+            <template #not-found>
+                <p>No articles found.</p>
+            </template>
+        </ContentList>
     </div>
 </template>
 
