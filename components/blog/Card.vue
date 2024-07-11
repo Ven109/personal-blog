@@ -4,7 +4,7 @@
         :to="blog.path"
     >
         <div
-            class="bg-white dark:bg-gray-800 border dark:border-gray-700 border-gray-200 h-full rounded-lg shadow w-full"
+            class="bg-white dark:bg-gray-800 border dark:border-gray-700 border-gray-200 h-full min-h-[350px] rounded-lg shadow w-full"
         >
             <img
                 v-if="blog.img"
@@ -23,7 +23,7 @@
                     {{ blog.title }}
                 </h5>
                 <p
-                    class="font-normal line-clamp-2 mb-3 text-gray-700 dark:text-gray-400"
+                    class="font-normal line-clamp-3 mb-3 text-gray-700 dark:text-gray-400"
                 >
                     {{ blog.description }}
                 </p>

@@ -3,6 +3,9 @@
         <button @click="fetchContent('tech')">
             Tech
         </button>
+        <button @click="reset">
+            Reset
+        </button>
         <div class="auto-cols-max auto-rows-max grid grid-cols-3 gap-4">
             <div
                 v-for="blog in blogs"
@@ -25,12 +28,18 @@ const blogs = ref();
 
 const { data } = await useAsyncData('home', () => queryContent('/blog').find());
 
-console.log(data.value);
-
 blogs.value = data.value;
 
-async function fetchContent(tag: string) {
-    blogs.value = await queryContent('/blog').where({tags: {$contains: tag}}).find();
-    console.log(blogs.value);
+function fetchContent(tag: string) {
+    blogs.value = data.value?.filter((blog: any) => {
+        if (!('tags' in blog)) {
+            return false;
+        }
+        return blog.tags.includes(tag);
+    });
+}
+
+function reset() {
+    blogs.value = data.value;
 }
 </script>
