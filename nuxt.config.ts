@@ -6,5 +6,4 @@ export default defineNuxtConfig({
         "@nuxtjs/tailwindcss",
         "@nuxt/eslint",
     ],
-    ssr: false,
 });

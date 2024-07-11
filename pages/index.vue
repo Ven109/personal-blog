@@ -1,9 +1,5 @@
 <template>
     <div>
-        <p>Test Page</p>
+        Hi
     </div>
 </template>
-
-<script lang="ts" setup>
-
-</script>
