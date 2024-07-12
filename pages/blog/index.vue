@@ -30,16 +30,13 @@ const { data } = await useAsyncData('home', () => queryContent('/blog').find());
 
 blogs.value = data.value;
 
-function fetchContent(tag: string) {
-    blogs.value = data.value?.filter((blog: any) => {
-        if (!('tags' in blog)) {
-            return false;
-        }
-        return blog.tags.includes(tag);
-    });
+async function fetchContent(tag: string) {
+    blogs.value = await queryContent('/blog')
+        .where({'tags': { $contains: tag}})
+        .find();
 }
 
-function reset() {
-    blogs.value = data.value;
+async function reset() {
+    blogs.value = await queryContent('/blog').find();
 }
 </script>
