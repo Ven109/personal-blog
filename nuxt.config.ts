@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             mdc: {
-                useNuxtImage: false,
+                useNuxtImage: true,
             },
         },
     },
