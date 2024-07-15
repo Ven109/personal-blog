@@ -7,4 +7,11 @@ export default defineNuxtConfig({
         "@nuxt/eslint",
         "nuxt-icon",
     ],
+    runtimeConfig: {
+        public: {
+            mdc: {
+                useNuxtImage: false,
+            },
+        },
+    },
 });
