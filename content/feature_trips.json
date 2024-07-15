@@ -1,0 +1,45 @@
+{
+  "featureTrips": [
+    {
+      "img": "/img/mallorca.jpg",
+      "title": "10 Tage im Süden Mallorcas",
+      "tags": [
+        "Strand",
+        "Meer",
+        "Sonne",
+        "Essen",
+        "Trinken",
+        "Natur",
+        "Wandern"
+      ],
+      "link": "/trips/mallorca"
+    },
+    {
+      "img": "/img/norway.jpg",
+      "title": "14 Tage durch die gewaltige Natur Norwegens",
+      "tags": [
+        "Fjorde",
+        "Berge",
+        "Wasserfälle",
+        "Menschen",
+        "Natur",
+        "Wandern"
+      ],
+      "link": "/trips/norway"
+    },
+    {
+      "img": "/img/georgia.jpg",
+      "title": "7 Tage durch die Kultur Georgiens",
+      "tags": [
+        "Kultur",
+        "Geschichte",
+        "Essen",
+        "Trinken",
+        "Menschen",
+        "Natur",
+        "Wandern"
+      ],
+      "link": "/trips/georgia"
+    }
+  ]
+}

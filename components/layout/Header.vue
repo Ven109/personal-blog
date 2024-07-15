@@ -1,7 +1,11 @@
 <template>
-    <div class="flex justify-between items-center">
-        <div class="bg-white h-12 rounded-full w-12"/>
-        <nav>
+    <header
+        class="grid grid-cols-3 gap-4 items-center"
+    >
+        <div
+            class="bg-black h-12 rounded-full w-12"
+        />
+        <nav class="col-span-2 md:col-span-1 justify-self-end md:justify-self-center">
             <ul class="flex font-bold gap-6">
                 <li
                     v-for="route in routes"
@@ -9,10 +13,8 @@
                 >
                     <NuxtLink
                         :to="route.path"
-                        class="text-white hover:text-blue-500"
                     >
                         <div class="flex items-center gap-2">
-                            <Icon :name="route.icon" />
                             <p>
                                 {{ route.name }}
                             </p>
@@ -21,7 +23,7 @@
                 </li>
             </ul>
         </nav>
-    </div>
+    </header>
 </template>
 
 <script setup lang="ts">
@@ -32,12 +34,12 @@ const routes = [
         icon: 'ri:home-2-line',
     },
     {
-        name: 'Blog',
-        path: '/blog',
+        name: 'Reisen',
+        path: '/trips',
         icon: 'ri:blogger-line',
     },
     {
-        name: 'About',
+        name: 'Über Uns',
         path: '/about',
         icon: 'ri:information-line',
     },

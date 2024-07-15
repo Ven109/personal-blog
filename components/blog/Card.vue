@@ -4,26 +4,20 @@
         :to="blog.path"
     >
         <div
-            class="bg-white dark:bg-gray-800 border dark:border-gray-700 border-gray-200 h-full min-h-[350px] rounded-lg shadow w-full"
+            class="flex flex-col h-full min-h-0 relative w-full"
         >
             <img
-                v-if="blog.img"
-                :src="blog.img"
-                class="h-40 object-cover rounded-t-lg w-full"
+                :src="blog.img ? blog.img : '/img/cover.jpg'"
+                class="min-h-32 object-cover rounded-2xl w-full z-[5]"
             >
-            <img
-                v-else
-                src="/img/default.jpg"
-                class="h-40 object-cover rounded-t-lg w-full"
-            >
-            <div class="p-6">
+            <div class="border-2 border-[#f4f4f4] grow mt-[-16px] p-4 pt-6 rounded-b-2xl">
                 <h5
-                    class="font-bold mb-2 text-2xl dark:text-white text-gray-900 tracking-tight"
+                    class="font-bold text-2xl tracking-tight"
                 >
                     {{ blog.title }}
                 </h5>
                 <p
-                    class="font-normal line-clamp-3 mb-3 text-gray-700 dark:text-gray-400"
+                    class="font-normal line-clamp-3"
                 >
                     {{ blog.description }}
                 </p>

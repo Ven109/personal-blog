@@ -1,11 +1,12 @@
 <template>
-    <main
-        class="min-h-screen bg-white  text-white antialiased py-8 dark:bg-gray-900">
-        <div class="mx-auto flex flex-col max-w-screen-xl px-4">
-            <LayoutHeader class="pb-8 max-w-5xl mx-auto  w-full"/>
-            <div class="format format-sm sm:format-base lg:format-lg format-blue dark:format-invert mx-auto w-full max-w-4xl flex flex-col gap-4">
-                <slot />
-            </div>
-        </div>
-    </main>
+    <div
+        class="antialiased bg-white max-w-7xl min-h-screen mx-auto"
+    >
+        <LayoutHeader
+            class="mb-2 px-4 py-4 w-full z-10"
+        />
+        <main class="mx-auto px-4 w-full">
+            <slot />
+        </main>
+    </div>
 </template>
