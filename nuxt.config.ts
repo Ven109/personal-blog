@@ -1,4 +1,7 @@
 export default defineNuxtConfig({
+    site: {
+        indexable: false,
+    },
     modules: [
         "@nuxt/content",
         "@nuxthq/studio",
@@ -6,6 +9,7 @@ export default defineNuxtConfig({
         "@nuxtjs/tailwindcss",
         "@nuxt/eslint",
         "nuxt-icon",
+        "@nuxtjs/seo",
     ],
     runtimeConfig: {
         public: {
@@ -14,7 +18,11 @@ export default defineNuxtConfig({
             },
         },
     },
+    routeRules: {
+        '/': { prerender: true},
+    },
     nitro: {
         preset: 'vercel-edge',
     },
+    devtools: { enabled: true },
 });

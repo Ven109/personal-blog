@@ -7,6 +7,10 @@
     @apply text-4xl pb-4 font-bold;
   }
   h2 {
-    @apply text-xl;
+    @apply text-2xl font-bold;
+  }
+
+  h4 {
+    @apply text-xs uppercase font-bold;
   }
 }

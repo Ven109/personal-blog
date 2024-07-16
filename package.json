@@ -18,6 +18,7 @@
     "@nuxt/eslint": "^0.3.13",
     "@nuxt/image": "^1.7.0",
     "@nuxthq/studio": "^2.0.2",
+    "@nuxtjs/seo": "^2.0.0-rc.14",
     "@nuxtjs/tailwindcss": "^6.12.0",
     "eslint": "^8.57.0",
     "nuxt": "latest"
