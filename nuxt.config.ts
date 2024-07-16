@@ -21,8 +21,5 @@ export default defineNuxtConfig({
     routeRules: {
         '/': { prerender: true},
     },
-    nitro: {
-        preset: 'vercel-edge',
-    },
     devtools: { enabled: true },
 });
