@@ -25,7 +25,6 @@
         </ul> -->
         <ContentDoc
             tag="article"
-            class="flex flex-col gap-2 mb-8"
-        />
+            class="flex flex-col gap-2 mb-8"/>
     </div>
 </template>

@@ -18,6 +18,12 @@ export default defineNuxtConfig({
             },
         },
     },
+    image: {
+        provider: 'imagekit',
+        imagekit: {
+            baseURL: 'https://ik.imagekit.io/gkyuh30xa',
+        },
+    },
     routeRules: {
         '/': { prerender: true},
     },

@@ -1,7 +1,7 @@
 {
   "featureTrips": [
     {
-      "img": "/img/mallorca.jpg",
+      "img": "mallorca.jpg",
       "title": "10 Tage im Süden Mallorcas",
       "tags": [
         "Strand",
@@ -15,7 +15,7 @@
       "link": "/trips/mallorca"
     },
     {
-      "img": "/img/norway.jpg",
+      "img": "norway.jpg",
       "title": "14 Tage durch die gewaltige Natur Norwegens",
       "tags": [
         "Fjorde",
@@ -28,7 +28,7 @@
       "link": "/trips/norway"
     },
     {
-      "img": "/img/georgia.jpg",
+      "img": "georgia.jpg",
       "title": "7 Tage durch die Kultur Georgiens",
       "tags": [
         "Kultur",

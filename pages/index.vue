@@ -3,10 +3,9 @@ import FeatureTripCard from './FeatureTripCard.vue'<template>
     <div class="text-[#1a1e18]">
         <div class="h-[30vh] md:h-[70vh] relative">
             <div class="absolute inset-x-0 bg-black h-full opacity-50 rounded-2xl w-full z-[5]" />
-            <img
-                src="/img/cover.jpg"
-                class="absolute inset-x-0 h-full object-cover rounded-2xl w-full"
-            >
+            <NuxtImg
+                src="cover.jpg"
+                class="absolute inset-x-0 h-full object-cover rounded-2xl w-full"/>
             <div class="content-center font-bold grid gap-4 md:gap-8 h-full mx-auto pl-4 md:pl-12 relative text-3xl md:text-5xl text-white z-[5]">
                 <h6>
                     Entdecke mit uns die Welt.
@@ -18,8 +17,7 @@ import FeatureTripCard from './FeatureTripCard.vue'<template>
         </div>
         <section
             id="trips"
-            class="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-8 my-4 md:my-8"
-        >
+            class="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-8 my-4 md:my-8">
             <h6 class="font-semibold leading-normal text-3xl">
                 Wir möchten Euch die Welt außerhalb der Touristenpfade zeigen.
             </h6>
@@ -41,17 +39,14 @@ import FeatureTripCard from './FeatureTripCard.vue'<template>
             <template v-if="featureTrips.length === 3">
                 <FeatureTripCard
                     :trip="featureTrips[0]"
-                    class="h-[350px] md:h-full"
-                />
+                    class="h-[350px] md:h-full"/>
                 <div class="flex flex-col gap-4">
                     <FeatureTripCard
                         :trip="featureTrips[1]"
-                        class="h-[350px]"
-                    />
+                        class="h-[350px]"/>
                     <FeatureTripCard
                         :trip="featureTrips[2]"
-                        class="h-[350px]"
-                    />
+                        class="h-[350px]"/>
                 </div>
             </template>
         </section>

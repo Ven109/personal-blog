@@ -1,19 +1,15 @@
 <template>
     <header
-        class="grid grid-cols-3 gap-4 items-center"
-    >
+        class="grid grid-cols-3 gap-4 items-center">
         <div
-            class="bg-black h-12 rounded-full w-12"
-        />
+            class="bg-black h-12 rounded-full w-12"/>
         <nav class="col-span-2 md:col-span-1 justify-self-end md:justify-self-center">
             <ul class="flex font-bold gap-6">
                 <li
                     v-for="route in routes"
-                    :key="route.name"
-                >
+                    :key="route.name">
                     <a
-                        :href="route.path"
-                    >
+                        :href="route.path">
                         <div class="flex items-center gap-2">
                             <p>
                                 {{ route.name }}

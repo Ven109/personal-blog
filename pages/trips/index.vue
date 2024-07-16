@@ -1,22 +1,18 @@
 <template>
     <div>
         <div
-            class="auto-cols-max grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-4"
-        >
+            class="auto-cols-max grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-4">
             <ContentList
                 v-slot="{ list }"
-                :query="query"
-            >
+                :query="query">
                 <div
                     v-for="trip in list"
-                    :key="trip._path"
-                >
+                    :key="trip._path">
                     <BlogCard
                         :path="trip._path || ''"
                         :title="trip.title || ''"
                         :description="trip.description"
-                        :img="trip.img"
-                    />
+                        :img="trip.img"/>
                 </div>
             </contentlist></div>
     </div>
