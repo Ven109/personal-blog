@@ -22,4 +22,7 @@ export default defineNuxtConfig({
         '/': { prerender: true},
     },
     devtools: { enabled: true },
+    devServer: {
+        url: 'http://localhost:3000',
+    },
 });

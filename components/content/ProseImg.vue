@@ -2,7 +2,7 @@
     <div class="mb-2">
         <NuxtImg
             :src="src"
-            class="rounded-xl"
+            class="rounded-xl w-full"
         />
         <div class="italic text-sm">
             {{ alt }}

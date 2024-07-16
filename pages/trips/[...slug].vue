@@ -29,12 +29,3 @@
         />
     </div>
 </template>
-
-<!-- <script lang="ts" setup>
-const route = useRoute();
-
-// const { data: blogPost } = await useAsyncData(`blogToc`, () => queryContent(route.fullPath).findOne());
-
-// const tocLinks = computed(() => blogPost.value?.body?.toc?.links ?? []);
-
-</script> -->

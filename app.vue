@@ -1,8 +1,6 @@
 <!-- eslint-disable vue/enforce-style-attribute -->
 <template>
-    <div
-        id="app"
-    >
+    <div>
         <NuxtLayout>
             <NuxtPage />
         </NuxtLayout>

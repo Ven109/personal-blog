@@ -11,15 +11,15 @@
                     v-for="route in routes"
                     :key="route.name"
                 >
-                    <NuxtLink
-                        :to="route.path"
+                    <a
+                        :href="route.path"
                     >
                         <div class="flex items-center gap-2">
                             <p>
                                 {{ route.name }}
                             </p>
                         </div>
-                    </NuxtLink>
+                    </a>
                 </li>
             </ul>
         </nav>
