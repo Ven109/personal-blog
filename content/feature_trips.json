@@ -1,4 +1,5 @@
 {
+  "navigation": false,
   "featureTrips": [
     {
       "img": "mallorca.jpg",
@@ -12,7 +13,7 @@
         "Natur",
         "Wandern"
       ],
-      "link": "/trips/mallorca"
+      "link": "/trips/overview/0"
     },
     {
       "img": "norway.jpg",
@@ -25,7 +26,7 @@
         "Natur",
         "Wandern"
       ],
-      "link": "/trips/norway"
+      "link": "/trips/overview/0"
     },
     {
       "img": "georgia.jpg",
@@ -39,7 +40,7 @@
         "Natur",
         "Wandern"
       ],
-      "link": "/trips/georgia"
+      "link": "/trips/overview/0"
     }
   ]
 }

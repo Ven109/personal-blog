@@ -31,7 +31,7 @@ const routes = [
     },
     {
         name: 'Reisen',
-        path: '/trips',
+        path: '/trips/overview/0',
         icon: 'ri:blogger-line',
     },
     {

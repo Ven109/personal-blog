@@ -27,8 +27,8 @@ import FeatureTripCard from './FeatureTripCard.vue'<template>
                     Wir haben uns entschieden, unsere Erfahrungen mit Euch zu teilen.
                     Stöbert durch unsere Reiseberichte und lasst Euch inspirieren.
                 </p>
-                <NuxtLink to="/trips">
-                    <button class="bg-black font-bold mt-4 px-4 py-2 rounded-lg text-white">
+                <NuxtLink to="/trips/overview/0">
+                    <button class="bg-primary font-bold mt-4 px-4 py-2 rounded-lg text-white">
                         Entdecke alle Reisen
                     </button>
                 </NuxtLink>

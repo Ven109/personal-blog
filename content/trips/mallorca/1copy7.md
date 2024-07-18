@@ -3,7 +3,7 @@ navigation: true
 title: Mallorca Tag 1
 description: "Im folgenden Blog Post wird der erste Mallorca Tag 1 beschrieben"
 date: 17.07.2024
-trip: "mallorca-2024"
+trip: mallorca-2024
 img: "mallorca.jpg"
 ---
 

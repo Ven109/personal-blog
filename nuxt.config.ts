@@ -1,6 +1,7 @@
 export default defineNuxtConfig({
     site: {
         indexable: false,
+        url: 'https://example.com',
     },
     modules: [
         "@nuxt/content",
@@ -26,6 +27,7 @@ export default defineNuxtConfig({
     },
     routeRules: {
         '/': { prerender: true},
+        '/trips/overview': { redirect: '/trips/overview/0' },
     },
     devtools: { enabled: true },
     devServer: {
