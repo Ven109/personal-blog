@@ -27,6 +27,7 @@ export default defineNuxtConfig({
     },
     routeRules: {
         '/': { prerender: true},
+        '/trips/overview/0': { prerender: true },
         '/trips/overview': { redirect: '/trips/overview/0' },
     },
     devtools: { enabled: true },
