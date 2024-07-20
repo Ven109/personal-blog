@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+
+  body {
+    @apply bg-haze bg-opacity-10
+  }
   h1 {
     @apply text-4xl pb-4 font-bold;
   }
@@ -12,5 +16,31 @@
 
   h4 {
     @apply text-xs uppercase font-bold;
+  }
+
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    border-radius: 14px;
+  }
+
+  :root {
+    --vc-pgn-border-radius: 9999px !important;
+    --vc-pgn-height: 8px !important;
+    --vc-pgn-width: 8px !important;
+    --vc-nav-width: 40px !important;
+    --vc-nav-height: 40px !important;
   }
 }

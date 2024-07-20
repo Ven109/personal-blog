@@ -1,5 +1,15 @@
 {
   "navigation": false,
+  "intro": [
+    "bus.jpg",
+    "see.jpg",
+    "map.jpg",
+    "airplane.jpg",
+    "cover.jpg",
+    "mallorca.jpg",
+    "norway.jpg",
+    "georgia.jpg"
+  ],
   "featureTrips": [
     {
       "img": "mallorca.jpg",

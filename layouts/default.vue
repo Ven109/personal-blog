@@ -1,10 +1,9 @@
 <template>
     <div
-        class="antialiased bg-white max-w-7xl min-h-screen mx-auto">
+        class="antialiased h-full relative w-full">
         <SpeedInsights />
-        <LayoutHeader
-            class="mb-2 px-4 py-4 w-full z-10"/>
-        <main class="mx-auto px-4 w-full">
+        <LayoutHeader />
+        <main class="min-h-[50vh] my-4 px-24 relative">
             <slot />
         </main>
     </div>

@@ -25,13 +25,9 @@ export default defineNuxtConfig({
             baseURL: 'https://ik.imagekit.io/gkyuh30xa',
         },
     },
-    routeRules: {
-        '/': { prerender: true},
-        '/trips/overview/0': { prerender: true },
-        '/trips/overview': { redirect: '/trips/overview/0' },
-    },
     devtools: { enabled: true },
     devServer: {
         url: 'http://localhost:3000',
     },
+    compatibilityDate: "2024-07-20",
 });
